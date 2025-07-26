@@ -6,12 +6,14 @@ SafariViewController Cordova Plugin
 [![TotalDownloads][total-downloads-image]][npm-url]
 [![Twitter Follow][twitter-image]][twitter-url]
 
-[npm-image]:http://img.shields.io/npm/v/cordova-plugin-safariviewcontroller.svg
-[npm-url]:https://npmjs.org/package/cordova-plugin-safariviewcontroller
-[downloads-image]:http://img.shields.io/npm/dm/cordova-plugin-safariviewcontroller.svg
-[total-downloads-image]:http://img.shields.io/npm/dt/cordova-plugin-safariviewcontroller.svg?label=total%20downloads
+[npm-image]:http://img.shields.io/npm/v/gdevelop-cordova-plugin-safariviewcontroller.svg
+[npm-url]:https://npmjs.org/package/gdevelop-cordova-plugin-safariviewcontroller
+[downloads-image]:http://img.shields.io/npm/dm/gdevelop-cordova-plugin-safariviewcontroller.svg
+[total-downloads-image]:http://img.shields.io/npm/dt/gdevelop-cordova-plugin-safariviewcontroller.svg?label=total%20downloads
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
+
+> Note: this is a fork of https://github.com/EddyVerbruggen/cordova-plugin-safariviewcontroller while waiting for it to be updated. If needed, this will be cleaned and published as a npm module maintained by the GDevelop team.
 
 ## 0. Index
 
@@ -28,7 +30,7 @@ SafariViewController Cordova Plugin
 * Use the new and powerful iOS9 viewcontroller to show webcontent in your PhoneGap app
 * Requires XCode 7 / iOS9 SDK to build
 * Requires iOS9 to use, lower versions need to fall back to InAppBrowser (example below!)
-* [Chrome custom tabs](https://developer.chrome.com/multidevice/android/customtabs) are Android's parallel to SafariViewController with even more customizable UI. You can give it a try with the latest version of this plugin. See [the wiki](https://github.com/EddyVerbruggen/cordova-plugin-safariviewcontroller/wiki) for details.
+* [Chrome custom tabs](https://developer.chrome.com/multidevice/android/customtabs) are Android's parallel to SafariViewController with even more customizable UI. You can give it a try with the latest version of this plugin. See [the wiki](https://github.com/GDevelopApp/cordova-plugin-safariviewcontroller/wiki) for details.
 
 Note that I didn't decide to clobber window.open to override InAppBrowser when applicable
 because that would mean you could never use InAppBrowser in case you need its advanced features
@@ -60,7 +62,7 @@ On iOS 10, you can use `barColor` and `controlTintColor` as well
 To install the plugin with the Cordova CLI from npm:
 
 ```
-$ cordova plugin add cordova-plugin-safariviewcontroller
+$ cordova plugin add gdevelop-cordova-plugin-safariviewcontroller
 ```
 
 *Note*: the plugin requires Cordova Android 7.0.0 or later.
@@ -181,7 +183,7 @@ Do this:
 
 ## 7. Changelog
 * 2.0.0 Support AndroidX
-* 1.6.0 A few changes for Android. See [these closed issues](https://github.com/EddyVerbruggen/cordova-plugin-safariviewcontroller/milestone/7?closed=1).
+* 1.6.0 A few changes for Android. See [these closed issues](https://github.com/GDevelopApp/cordova-plugin-safariviewcontroller/milestone/7?closed=1).
 * 1.5.3 Hidden tabs don't get removed on `hide()` (iOS). Thanks #104!
 * 1.4.3 Options weren't correctly passed to native code. Thanks #19!
 * 1.4.2 When passing a URL not starting with http/https the error callback will be invoked.
