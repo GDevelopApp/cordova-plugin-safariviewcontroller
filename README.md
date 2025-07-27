@@ -6,10 +6,10 @@ SafariViewController Cordova Plugin
 [![TotalDownloads][total-downloads-image]][npm-url]
 [![Twitter Follow][twitter-image]][twitter-url]
 
-[npm-image]:http://img.shields.io/npm/v/gdevelop-cordova-plugin-safariviewcontroller.svg
-[npm-url]:https://npmjs.org/package/gdevelop-cordova-plugin-safariviewcontroller
-[downloads-image]:http://img.shields.io/npm/dm/gdevelop-cordova-plugin-safariviewcontroller.svg
-[total-downloads-image]:http://img.shields.io/npm/dt/gdevelop-cordova-plugin-safariviewcontroller.svg?label=total%20downloads
+[npm-image]:http://img.shields.io/npm/v/@gdevelop/cordova-plugin-safariviewcontroller.svg
+[npm-url]:https://npmjs.org/package/@gdevelop/cordova-plugin-safariviewcontroller
+[downloads-image]:http://img.shields.io/npm/dm/@gdevelop/cordova-plugin-safariviewcontroller.svg
+[total-downloads-image]:http://img.shields.io/npm/dt/@gdevelop/cordova-plugin-safariviewcontroller.svg?label=total%20downloads
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
 
@@ -62,23 +62,8 @@ On iOS 10, you can use `barColor` and `controlTintColor` as well
 To install the plugin with the Cordova CLI from npm:
 
 ```
-$ cordova plugin add gdevelop-cordova-plugin-safariviewcontroller
+$ cordova plugin add @gdevelop/cordova-plugin-safariviewcontroller
 ```
-
-*Note*: the plugin requires Cordova Android 7.0.0 or later.
-
-### Graceful fallback to InAppBrowser
-** This section is kinda obsolete by now (with iOS 12 currently being the latest version) **
-
-Since SafariViewController is new in iOS9 you need to have a fallback for older versions (and other platforms),
-so if `available` returns false (see the snippet below) you want to open the URL in the InAppBrowser probably,
-so be sure to include that plugin as well:
-
-```
-$ cordova plugin add cordova-plugin-inappbrowser
-```
-
-I'm not including it as a dependency as not all folks may have this requirement.
 
 ## 4. Usage
 Check the [demo code](demo/index.html) for an easy to drop in example, otherwise copy-paste this:
@@ -182,6 +167,8 @@ Do this:
 
 
 ## 7. Changelog
+
+* 2.1.0 Support for latest Java version
 * 2.0.0 Support AndroidX
 * 1.6.0 A few changes for Android. See [these closed issues](https://github.com/GDevelopApp/cordova-plugin-safariviewcontroller/milestone/7?closed=1).
 * 1.5.3 Hidden tabs don't get removed on `hide()` (iOS). Thanks #104!
